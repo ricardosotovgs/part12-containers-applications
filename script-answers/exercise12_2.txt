@@ -1,0 +1,14 @@
+Script started on Thu Sep 19 11:51:19 2024
+Restored session: Thu Sep 19 09:19:32 CST 2024
+[1m[7m%[27m[1m[0m                                                                                                                      ]7;file://Ricardos-MacBook-Pro.local/Users/ricardosoto/Desktop/part12-containers-applications/script-answers[0m[27m[24m[Jricardosoto@Ricardos-MacBook-Pro script-answers % [K[?2004hddocker run -it ubuntu bash[?2004l
+[?2004h]0;root@e8edb22353f2: /root@e8edb22353f2:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@e8edb22353f2: /root@e8edb22353f2:/# tocu  cuh     uch /s us/s  r/src/app/index.js
+[?2004l[?2004h]0;root@e8edb22353f2: /root@e8edb22353f2:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                      ]7;file://Ricardos-MacBook-Pro.local/Users/ricardosoto/Desktop/part12-containers-applications/script-answers[0m[27m[24m[Jricardosoto@Ricardos-MacBook-Pro script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Thu Sep 19 11:52:19 2024
