@@ -1,0 +1,6 @@
+services:
+  app: # the name of the service
+    image: todo-backend-image # declares image to use
+    build: . # declares where to build if image is not found
+    ports: # declares the ports to publish
+      - 3000:3000
