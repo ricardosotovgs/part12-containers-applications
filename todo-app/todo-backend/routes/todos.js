@@ -2,6 +2,16 @@ const express = require('express');
 const { Todo } = require('../mongo')
 const router = express.Router();
 
+router.get('/:id', async(request, response) => {
+  const { id } = request.params
+  const todo = await Todo.findById(id)
+
+  if (todo) {
+    response.send(todo)
+  }
+  else return response.sendStatus(404)
+})
+
 /* GET todos listing. */
 router.get('/', async (_, res) => {
   const todos = await Todo.find({})
@@ -16,6 +26,18 @@ router.post('/', async (req, res) => {
   })
   res.send(todo);
 });
+
+router.put('/:id', async (request, response) => {
+  const todo = request.body;
+
+  const updatedTodo = await Todo.findByIdAndUpdate(
+    request.params.id,
+    todo,
+    { new: true, runValidators: true, context: 'query' }
+  );
+  
+  response.status(201).send(updatedTodo);
+})
 
 const singleRouter = express.Router();
 
